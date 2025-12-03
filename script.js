@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
   const speed = deltaY / deltaTime;
 
   // AMPLIFIED hue change — way more dramatic
-  const hueShift = speed * 2000; 
+  const hueShift = speed * 5000; 
   const hue = (hueShift % 360); // keep it looping smoothly
 
   document.getElementById("name").style.color = `hsl(${hue}, 100%, 60%)`;
