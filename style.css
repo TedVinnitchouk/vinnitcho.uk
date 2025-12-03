@@ -3,18 +3,23 @@ html, body {
   padding: 0;
   background: #000;
   overflow-y: scroll;
+
+  /* Hide scrollbar (Firefox) */
   scrollbar-width: none;
 }
 
+/* Hide scrollbar (Chrome, Safari, Edge) */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
 
+/* Invisible scroll area to trigger color changes */
 #scroll-area {
   height: 30000vh;
 }
 
+/* Center block containing title + links */
 #center-content {
   position: fixed;
   top: 50%;
@@ -23,25 +28,27 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
+/* Vinnitchouk title in Bebas Neue */
 #name {
   color: white;
-  font-family: monospace;
-  font-weight: bold;
-  font-size: clamp(32px, 10vw, 150px);
-  margin-bottom: 25px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: clamp(48px, 12vw, 180px);
+  margin-bottom: 28px;
 }
 
-/* Vertical stacked link list */
+/* Vertical list of links */
 #links a {
-  display: block; /* <-- makes them vertical */
-  margin: 12px 0;
+  display: block;
+  margin: 10px 0;
   color: white;
   font-family: monospace;
-  font-size: clamp(14px, 2.5vw, 24px);
+  font-size: clamp(14px, 1.8vw, 24px);
   text-decoration: none;
   transition: color 0.15s linear;
 }
 
+/* Hover color matches scroll-based accent color */
 #links a:hover {
-  color: var(--accent-color); /* matches Vinnitchouk color */
+  color: var(--accent-color);
 }
