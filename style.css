@@ -26,6 +26,9 @@ body::-webkit-scrollbar {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  /* enable 3D space for the title */
+  perspective: 800px;
 }
 
 /* Main homepage title */
@@ -35,6 +38,18 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-size: clamp(48px, 12vw, 180px);
   margin-bottom: 28px;
+
+  /* 3D + animation */
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+
+  /* fake depth */
+  text-shadow:
+    1px 1px 0 #444,
+    2px 2px 0 #333,
+    3px 3px 0 #222;
 }
 
 /* Homepage vertical links */
