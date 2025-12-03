@@ -3,8 +3,23 @@ html, body {
   padding: 0;
   background: #000;
   overflow-y: scroll;
+
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
 }
 
+/* Hide scrollbar for Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Invisible scroll area to trigger scroll events */
+#scroll-area {
+  height: 30000vh; /* adjust if you want a longer or shorter scroll */
+}
+
+/* Centered name styling */
 #name {
   position: fixed;
   top: 50%;
@@ -14,4 +29,5 @@ html, body {
   font-family: monospace;
   font-weight: bold;
   font-size: clamp(32px, 10vw, 150px);
+  text-align: center;
 }
