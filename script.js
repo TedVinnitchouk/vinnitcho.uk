@@ -1,9 +1,9 @@
 window.addEventListener("scroll", () => {
   const scroll = window.scrollY;
 
-  // turn scroll position into a hue value
+  // Turn scroll position into hue
   const hue = scroll % 360;
 
-  // apply HSL color
+  // Apply color to name text
   document.getElementById("name").style.color = `hsl(${hue}, 100%, 60%)`;
 });
