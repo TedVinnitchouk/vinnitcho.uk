@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 400vh; /* scroll is now 4× longer */
+  height: 40000vh; /* scroll is now 4× longer */
   background: #000;
   overflow-y: scroll;
   font-family: Arial, Helvetica, sans-serif;
