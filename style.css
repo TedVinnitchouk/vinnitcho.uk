@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
   margin: 12px 0;
   color: white;
   font-family: monospace;
-  font-size: clamp(14px, 2.5vw, 34px);
+  font-size: clamp(14px, 2.5vw, 24px);
   text-decoration: none;
   transition: color 0.15s linear;
 }
