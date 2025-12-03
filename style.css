@@ -1,10 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 40000vh; /* keep long scrolling */
+  height: 40000vh; /* still huge scroll */
   background: #000;
   overflow-y: scroll;
-  font-family: monospace; /* clean monospace */
 }
 
 #name {
@@ -12,13 +11,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  /* responsive font size */
-  font-size: clamp(32px, 10vw, 150px);
-
-  font-weight: 900; /* bold but not invalid */
   color: white;
-  text-align: center;
-
-  transition: color 0.05s linear; /* keep fast color changes */
+  font-family: monospace;
+  font-weight: bold;
+  font-size: clamp(32px, 10vw, 150px);
 }
