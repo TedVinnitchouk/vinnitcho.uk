@@ -6,16 +6,16 @@ window.addEventListener("scroll", () => {
   const currentTime = Date.now();
 
   const deltaY = Math.abs(currentY - lastScrollY);
-  const deltaTime = currentTime - lastTime || 1; // avoid divide by zero
-  const speed = deltaY / deltaTime; // px per ms
+  const deltaTime = currentTime - lastTime || 1;
 
-  // Map scroll speed to hue (0–360)
-  const hue = Math.min(360, speed * 800);
+  // Scroll speed (px/ms)
+  const speed = deltaY / deltaTime;
 
-  const nameEl = document.getElementById("name");
-  if (nameEl) {
-    nameEl.style.color = `hsl(${hue}, 90%, 60%)`;
-  }
+  // AMPLIFIED hue change — way more dramatic
+  const hueShift = speed * 2000; 
+  const hue = (hueShift % 360); // keep it looping smoothly
+
+  document.getElementById("name").style.color = `hsl(${hue}, 100%, 60%)`;
 
   lastScrollY = currentY;
   lastTime = currentTime;
