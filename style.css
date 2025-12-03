@@ -3,23 +3,18 @@ html, body {
   padding: 0;
   background: #000;
   overflow-y: scroll;
-
-  /* Hide scrollbar for Firefox */
   scrollbar-width: none;
 }
 
-/* Hide scrollbar for Chrome, Safari, Edge */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* Invisible scroll area */
 #scroll-area {
   height: 30000vh;
 }
 
-/* Wrapper so name + links stay centered together */
 #center-content {
   position: fixed;
   top: 50%;
@@ -28,26 +23,25 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
-/* Name styling */
 #name {
   color: white;
   font-family: monospace;
   font-weight: bold;
   font-size: clamp(32px, 10vw, 150px);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-/* Links styling */
+/* Vertical stacked link list */
 #links a {
-  display: inline-block;
-  margin: 6px 12px;
+  display: block; /* <-- makes them vertical */
+  margin: 12px 0;
   color: white;
   font-family: monospace;
-  font-size: clamp(16px, 2.5vw, 32px);
+  font-size: clamp(18px, 2.5vw, 34px);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.15s linear;
 }
 
 #links a:hover {
-  color: hsl(0, 0%, 70%);
+  color: var(--accent-color); /* matches Vinnitchouk color */
 }
