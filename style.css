@@ -14,12 +14,12 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Invisible scroll area to trigger color changes */
+/* Invisible scroll area for homepage scroll effect */
 #scroll-area {
   height: 30000vh;
 }
 
-/* Center block containing title + links */
+/* Center block containing title + links on homepage */
 #center-content {
   position: fixed;
   top: 50%;
@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
-/* Vinnitchouk title in Bebas Neue */
+/* Main homepage title */
 #name {
   color: white;
   font-family: 'Bebas Neue', sans-serif;
@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
   margin-bottom: 28px;
 }
 
-/* Vertical list of links */
+/* Homepage vertical links */
 #links a {
   display: block;
   margin: 10px 0;
@@ -48,7 +48,42 @@ body::-webkit-scrollbar {
   transition: color 0.15s linear;
 }
 
-/* Hover color matches scroll-based accent color */
+/* Hover color matches scroll effect */
 #links a:hover {
   color: var(--accent-color);
+}
+
+/* ------------------------------ */
+/* Subpages: Books, Thoughts, Inspirations */
+/* ------------------------------ */
+
+#page-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: left;
+  color: white;  /* ensure all text is white */
+  font-family: monospace;
+}
+
+.page-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  margin-bottom: 20px;
+  color: white; /* white title */
+}
+
+.page-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: white; /* white paragraph text */
+}
+
+/* Back link — no hover color change */
+.back-link {
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
