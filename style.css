@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 40000vh; /* still huge scroll */
   background: #000;
   overflow-y: scroll;
 }
