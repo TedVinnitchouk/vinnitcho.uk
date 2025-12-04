@@ -93,6 +93,7 @@ body::-webkit-scrollbar {
   line-height: 1.6;
   margin-bottom: 40px;
   color: white; /* white paragraph text */
+  font-family: monospace;
 }
 
 /* Back link — no hover color change */
