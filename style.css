@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
   margin: 80px auto;
   padding: 20px;
   text-align: left;
-  color: white;  /* ensure all text is white */
+  color: white;
   font-family: monospace;
 }
 
@@ -85,19 +85,21 @@ body::-webkit-scrollbar {
   font-family: monospace;
   font-size: 34px;
   margin-bottom: 20px;
-  color: white; /* white title */
+  color: white;
 }
 
 .page-text {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: white; /* white paragraph text */
+  color: white;
   font-family: monospace;
 }
 
-/* Back link — no hover color change */
+/* Back link — clean spacing + consistent layout */
 .back-link {
+  display: block;
+  margin-bottom: 40px;
   font-family: monospace;
   font-size: 18px;
   color: white;
