@@ -26,8 +26,6 @@ body::-webkit-scrollbar {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
-  /* enable 3D space for the title */
   perspective: 800px;
 }
 
@@ -39,20 +37,18 @@ body::-webkit-scrollbar {
   font-size: clamp(48px, 12vw, 180px);
   margin-bottom: 28px;
 
-  /* 3D + animation */
   display: inline-block;
   transform-style: preserve-3d;
   transition: transform 0.6s ease;
   cursor: pointer;
 
-  /* fake depth */
   text-shadow:
     1px 1px 0 #444,
     2px 2px 0 #333,
     3px 3px 0 #222;
 }
 
-/* Homepage vertical links */
+/* Homepage links */
 #links a {
   display: block;
   margin: 10px 0;
@@ -63,13 +59,12 @@ body::-webkit-scrollbar {
   transition: color 0.15s linear;
 }
 
-/* Hover color matches scroll effect */
 #links a:hover {
   color: var(--accent-color);
 }
 
 /* ------------------------------ */
-/* Subpages: Books, Thoughts, Inspirations */
+/* Pages */
 /* ------------------------------ */
 
 #page-container {
@@ -82,26 +77,40 @@ body::-webkit-scrollbar {
 }
 
 .page-title {
-  font-family: monospace;
   font-size: 34px;
   margin-bottom: 20px;
-  color: white;
 }
 
 .page-text {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: white;
-  font-family: monospace;
 }
 
-/* Back link — clean spacing + consistent layout */
+/* Back link */
 .back-link {
   display: block;
   margin-bottom: 40px;
-  font-family: monospace;
   font-size: 18px;
   color: white;
   text-decoration: none;
+  opacity: 0.7;
+}
+
+.back-link:hover {
+  opacity: 1;
+}
+
+/* Thoughts list links */
+.thought-link {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: white;
+  text-decoration: underline;
+}
+
+.thought-link:hover {
+  opacity: 0.7;
 }
